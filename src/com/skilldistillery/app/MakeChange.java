@@ -35,26 +35,84 @@ public class MakeChange {
 					}
 					else if  (rstAmt%twentyDols !=0){
 						int quto1 = (int)(rstAmt/twentyDols);
-						int remd1 = (int)(rstAmt%twentyDols);
+						double remd1 = (double)(rstAmt%twentyDols);
 							if(remd1 % tenDols ==0) {
-								int ten1 = remd1/tenDols;
+								double ten1 = remd1/tenDols;
 								System.out.println("Here is the "+quto1+" twenty dollare and "+ ten1 +" ten dollars");
 							}
 							else if (remd1 % tenDols !=0) {
 								int quto2 = (int)(remd1/tenDols);
-								int remd2 = (int)(remd1%tenDols);
+								double remd2 = (double)(remd1%tenDols);
 									if(remd2 % fiveDols == 0) {
-										int five1 = remd2/fiveDols;
+										double five1 = remd2/fiveDols;
 										System.out.println("Here is the " +quto1 +
 												" twenty dollars and "+ quto2 +" ten dollars "+ five1 +" five dollars");
-									}
-								int five1 = remd2/fiveDols;
-								
-							}
-//						
-					}
-			}
-			}
-			}
+										}
+									else if(remd2 % fiveDols != 0) {
+										int quto3 = (int)(remd2/fiveDols);
+										double remd3 = (double)(remd2%fiveDols);
+											if(remd3 %oneDols==0) {
+												double one1 =remd3/oneDols;
+												System.out.println("Here is the "+quto1 +" twenty dollars and "+quto2 +
+														" ten dollars "+ quto3 +" five dollars "+one1 +" one dollars");
+												}
+											else if(remd3%oneDols !=0) {
+												int quto4 = (int)(remd3/oneDols);
+												double remd4 = remd3 % oneDols;
+														if (remd4 %quart ==0) {
+															double quart1 = remd4 / quart;
+															System.out.println("Here is the "+quto1 +" twenty dollars and "+
+														quto2 +" ten dollars "+ quto3 +" five dollars "+
+														quto4 +" one dollars "+ quart1 +" quarts");
+														}
+															else if(remd4 %quart !=0) {
+																int quto5 = (int)(remd4/quart);
+																double remd5 = remd4%quart;
+																		if(remd5 % dime ==0) {
+																			double dime1 = remd5/dime;
+																			System.out.println("Here is the "+quto1 +" twenty dollars and "+
+																			quto2 +" ten dollars "+ quto3 +" five dollars "+
+																			quto4 +" one dollars "+ quto5 +" quarts"
+																			+ dime1 +" dimes");
+																		}
+																		else if(remd5 % dime != 0) {
+																			int quto6 = (int)(remd5/dime);
+																			double remd6 = remd5 % dime;
+																				if(remd6%nickle == 0) {
+																					double nickle1 = remd6/nickle;
+																					System.out.println("Here is the "+quto1 +" twenty dollars and "+
+																							quto2 +" ten dollars "+ quto3 +" five dollars "+
+																							quto4 +" one dollars "+ quto5 +" quarts"
+																							+ quto6 +" dimes" +nickle1 +" nickles");
+																				}
+																				else if(remd6 % nickle !=0) {
+																					int quto7 = (int)(remd6%nickle);
+																					double  remd7 = remd6 % nickle;
+																					double pennis1 = remd7/pennies;
+																					System.out.println("Here is the "+quto1 +" twenty dollars and "+
+																							quto2 +" ten dollars "+ quto3 +" five dollars "+
+																							quto4 +" one dollars "+ quto5 +" quarts"
+																							+ quto6 +" dimes" +quto7 +" nickles"+ pennis1 +" pennies");
+																					
+																				}
+																		}
+																		}
+																	}
+															
+															}
+														}
+												}
+												
+										}
+								}
+						}
+				
+
+		
+
+
+			
+		
+			
 
 
