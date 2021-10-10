@@ -22,19 +22,19 @@ public class MakeChange {
 			else if (amountTender > itemPrice)  {
 				int twentyDols = 20;
 				int twentyHund = 2000;
-				int tenDols = 10;
+//				int tenDols = 10;
 				int tenHund = 1000;
-				int fiveDols = 5;
+//				int fiveDols = 5;
 				int fiveHund = 500;
-				int oneDols = 1;
+//				int oneDols = 1;
 				int oneHund = 100;
-				double quart = 0.25;
+//				double quart = 0.25;
 				int quartHund = 25;
-				double dime = 0.1;
+//				double dime = 0.1;
 				int dimeHund = 10;
-				double nickle = 0.05;
+//				double nickle = 0.05;
 				int nickleHund = 5;
-				double pennies = 0.01;
+//				double pennies = 0.01;
 				int penniesHund = 1;
 				int amountTenderHund = (int)(amountTender*100);
 				int itemPriceHund = (int)(itemPrice*100);
